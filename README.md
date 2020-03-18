@@ -1,6 +1,10 @@
 # dynapi
 Dynalist API Extras
 
+Installation:
+
+`pip install dynapi`
+
 Usage:
 
 `export DYNALIST_API_KEY=YOUR DYNALIST API KEY`
