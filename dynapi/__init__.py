@@ -19,6 +19,7 @@ class DynalistIO:
     def __init__(self):
         self.cache = {}
         self.API_KEY = os.environ.get('DYNALIST_API_KEY', None)
+        self.CACHING = False
 
     def set_api_key(self, apikey=None):
         if apikey is None:
@@ -55,5 +56,6 @@ class DynalistIO:
             return self.cache[file_id]
         else:
             client = DynaFile(file_id, token=self.API_KEY)
-            self.cache[file_id] = client
+            if self.CACHING:
+                self.cache[file_id] = client
             return client

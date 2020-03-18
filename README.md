@@ -19,4 +19,5 @@ io.search_files(title='String...')
 
 # Getting file Data
 data = io.get_file(file_id='FILE_ID') # Alternative option: refresh=False
+                                      # Requires set: io.CACHING = True (may eat more memory)
 ```
