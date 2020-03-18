@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='dynapi',
-    version='0.0.1',
+    version='0.0.2',
     description='Extras for dyanlist API wrapper.',
     url='https://gitlab.com/mindey/dynapi',
     author='Mindey',
